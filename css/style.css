@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Quicksand:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #2b2b31;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    position: relative;
+    background-color: #2b2b31;
+    z-index: 5000;
+    position: fixed;
+}
+
+.header_container {
+    width: 1883px;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    z-index: 100;
+}
+
+.logo_img {
+    width: 240px;
+    height: 90px;
+}
+
+.main_nav {
+    height: 90px;
+    width: 1643px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_nav ul {
+    display: flex;
+}
+
+.main_nav-list {
+    height: 90px;
+    margin-left: 3rem;
+}
+
+.nav-item {
+    height: 90px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 90px;
+}
+
+.nav-item a {
+    color: white;
+    padding: 37px 23px;
+    opacity: 0.8;
+}
+
+.nav-item a:hover {
+    opacity: 1;
+    color: #ff55a5;
+}
+
+.main_nav-function {
+    height: 90px;
+}
+
+.main_nav-function li {
+    height: 90px;
+    padding-left: 50px;
+}
+
+.main_nav-function li i {
+    font-size: 30px;
+    color: white;
+    opacity: 0.7;
+    line-height: 90px;
+}
+
+.main_nav-function li i:hover {
+    opacity: 1;
+}
+
+.main_nav-function li button {
+    outline: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 20px 30px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.3s;
+    background-image: linear-gradient(90deg, #ff55a5 0, #ff5860 100%);
+}
+
+.main_nav-function li button:hover {
+    opacity: 1;
+}
+
+.header_search {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    top: 90px;
+    border-top: 0.05px solid #ff5860;
+    display: flex;
+    overflow: hidden;
+    background-color: #2b2b31;
+    display: block;
+    z-index: 20000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    animation: animation_headersearch 0.2s linear;
+}
+
+.header_search.active {
+    display: none;
+}
+
+@keyframes animation_headersearch {
+    from {
+        height: 0;
+    }
+    to {
+        height: 60px;
+    }
+}
+
+.search_box {
+    width: 1265px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #28282d;
+}
+
+.search_box input {
+    width: 1050px;
+    height: 60px;
+    padding: 0 0 0 10px;
+    border: none;
+    background-color: #28282d;
+    color: white;
+}
+
+.search_btn {
+    height: 40px;
+    width: 90px;
+    top: 0.65rem;
+    left: 77.5%;
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(90deg, #ff55a5 0, #ff5860 100%);
+    cursor: pointer;
+    position: absolute;
+    opacity: 0.8;
+    color: white;
+    font-weight: 600;
+}
+
+.search_btn:hover {
+    opacity: 1;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.film_nomi {
+    height: 650px;
+    width: 100%;
+    background: url("https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/tdkhkbanner.jpg") center center / cover no-repeat;
+    display: flex;
+}
+
+.list_film-nomi {
+    height: 650px;
+    width: 100%;
+    background-color: rgba(85, 79, 79, 0.6);
+    display: flex;
+    flex-direction: column;
+}
+
+.title_film-nomi {
+    padding-top: 8rem;
+    width: 1250px;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.title_film-nomi ul p {
+    color: #fff;
+    font-size: 35px;
+}
+
+.nxt_prv-nomi {
+    display: flex;
+}
+
+.nxt_prv-nomi li {
+    padding-left: 40px;
+}
+
+.nxt_prv-nomi li i {
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 25px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.nxt_prv-nomi li i:hover {
+    opacity: 1;
+}
+
+.film_nomi-item {
+    width: 1250px;
+    margin: 0 auto;
+    height: 460px;
+    display: flex;
+    overflow: hidden;
+}
+
+.film_nomi-item ul {
+    display: flex;
+    flex: row;
+    width: 1250px;
+    margin: 0 auto;
+    height: 460px;
+    display: flex;
+}
+
+.film_nomi-item ul li {
+    width: 225px;
+    margin-right: 40px;
+    height: 450px;
+}
+
+.item_film-img {
+    width: 100%;
+    height: 71.78%;
+    overflow: hidden;
+    border-radius: 6px;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+}
+
+.fullHd {
+    position: absolute;
+    background-color: orange;
+    top: 0.3rem;
+    left: 0.3rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.fullHd h5 {
+    padding: 2px 2px;
+}
+
+.number_chapter {
+    position: absolute;
+    background-color: #ff55a5;
+    bottom: 4%;
+    height: 25px;
+    max-width: 75px;
+    right: 3%;
+    text-align: center;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.number_chapter h5 {
+    font-weight: 500;
+    line-height: 25px;
+    color: #fff;
+    padding: 0 2px;
+}
+
+.item_film-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.item_film-title {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.item_film-name {
+    padding: 10px 0;
+    width: 218px;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.item_film-name a {
+    color: white;
+}
+
+.item_film-nameEnglish {
+    opacity: 0.8;
+    width: 218px;
+    overflow: hidden;
+}
+
+.item_film {
+    height: 420px;
+    width: 100%;
+    padding: 0 10px;
+    overflow: hidden;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item_film-playbtn {
+    position: absolute;
+    border-radius: 6px;
+    display: flex;
+    top: 0;
+    height: 322.95px;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    background-color: rgba(238, 224, 224, 0.3);
+    display: none;
+}
+
+.btnplay {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.btnplay a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.btnplay a i {
+    font-size: 100px;
+    margin-top: 52%;
+    margin-left: 26%;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.item_film-playbtn.active {
+    display: block;
+}
+
+.item_film-playbtn.active:hover {
+    box-shadow: 30px 0 30px rgba(231, 13, 13, 0.5);
+}
+
+.hightlights {
+    width: 100%;
+}
+
+.hightlights_title {
+    width: 100%;
+    height: 139px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    border-top: 1px solid #ff5860;
+}
+
+.hightlights_title-h {
+    width: 1250px;
+    height: 54px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    line-height: 54px;
+}
+
+.hightlights_title-h p {
+    font-size: 36px;
+    color: #fff;
+}
+
+.hightlights_title-tabs {
+    width: 1250px;
+    height: 50px;
+    padding-top: 1rem;
+    margin: 0 auto;
+}
+
+.hightlights_title-tabs ul {
+    width: 1290px;
+    height: 50px;
+    display: flex;
+}
+
+.hightlights_title-tabs ul li {
+    padding-right: 30px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.7;
+    padding: 20px 0;
+    min-width: 80px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.tab-pane.active {
+    opacity: 1;
+    border-bottom: 2px solid #ff5860;
+}
+
+.hightlights_show-list {
+    width: 100%;
+    min-height: 900px;
+}
+
+.show_list-tabs {
+    padding-top: 2rem;
+    width: 1290px;
+    margin: 0 auto;
+}
+
+.tab-item {
+    display: none;
+}
+
+.tab-item.active {
+    display: block;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff5860;
+    border: 2px solid #ff5860;
+}
+
+#showNewFilm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.newFilm {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.newFilm li {
+    padding: 0 15px;
+    width: 210px;
+    height: 350px;
+}
+
+.newFilm .item_film-name {
+    font-size: 16px;
+}
